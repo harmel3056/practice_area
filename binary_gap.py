@@ -64,3 +64,4 @@ print(bin(4)[2:], solution(4)) # 0
 print(bin(16)[2:], solution(16)) # 0
 print(bin(20)[2:], solution(20)) # 1
 print(bin(529)[2:], solution(529)) # 4
+print(bin(2000000000)[2:], solution(2000000000)) # 2

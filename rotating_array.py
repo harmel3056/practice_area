@@ -70,3 +70,4 @@ print(f"7. (2) original: [5] solution: {solution([5], 2)}") # only one int in ar
 print(f"8. (0) original: [5] solution: {solution([5], 0)}") # K = 0
 print(f"9. (0) original: [1, 2, 3, 4, 5, 6] solution: {solution([1, 2, 3, 4, 5, 6], 0)}") # K = 0
 print(f"10. (10) original: [1, 2, 3, 4, 5, 6] solution: {solution([1, 2, 3, 4, 5, 6], 10)}") # K larger than N
+print(f"11. (12) original: [1, 1, 2, 3, 5] solution: {solution([1, 1, 2, 3, 5], 12)}") # K larger than N

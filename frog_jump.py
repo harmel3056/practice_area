@@ -44,3 +44,15 @@ print(f"input (10, 12, 30), result {solution(10, 12, 30)}") # distance smaller t
 print(f"input (0, 100, 25), result {solution(0, 100, 25)}") # no remainder
 print(f"input (1, 1000000000, 999999999), result {solution(1, 1000000000, 999999999)}") # large numbers
 print(f"input (1, 50, 1), result {solution(1, 50, 1)}") # lots of jumps
+
+"""
+An alternative measure could have been to employ a manual
+calculation, like so:
+"""
+def solution(X, Y, D):
+    distance = Y - X
+    return (distance + D - 1) // D
+"""
+This is more efficient, it avoids float, but math.ceil might
+be more memorable
+"""

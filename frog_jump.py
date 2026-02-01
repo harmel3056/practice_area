@@ -36,7 +36,7 @@ D = jump distance
 """
 def solution(X, Y, D):
     jumps = ((Y - X) / D)
-    return math.ceil(jumps)
+    return math.ceil(jumps) # math.ceil returns the rounded-up number of jumps
 
 print(f"input (10, 85, 15), result {solution(10, 85, 15)}") # standard test
 print(f"input (20, 20, 5), result {solution(20, 20, 5)}") # X == Y frog already at destination

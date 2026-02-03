@@ -34,7 +34,7 @@ print(f"expected: 1, actual: {solution([-200, -20, 0, 20, 200])}")
 
 def solutionB(A): 
     N = len(A)
-    full = set(range(A, N + 2))
+    full = set(range(1, N + 2))
     partial = set(A)
     missing = full - partial
 
@@ -48,13 +48,16 @@ print(f"B test | expected: 4, actual: {solution([1, 2, 3])}") # perfect sequence
 print(f"B test | expected: 1, actual: {solution([-1, -3])}") # small test, negative numbers
 print(f"B test | expected: 1, actual: {solution([-200, -20, 0, 20, 200])}") # negative and positive
 
-
+# this guy successfully handles the scope of the task in an efficient manner
+# switch system is the best way to verify based on values provided. It checks the array items
+# are within scope and converts the false to true where relevant, then comes back to run 1 to N + 2
+# until the first False is reached and that is then returned
 def solutionB(A):
     N = len(A)
-    present = [False] * (N + 2)  # indices 0..N+1
+    present = [False] * (N + 2)  # + 2 handles the 0 for bool as well as room for N + 1
 
     for X in A:
-        if 1 <= x <= N + 1:
+        if 1 <= X <= N + 1:
             present[x] = True
 
     for i in range(1, N + 2):

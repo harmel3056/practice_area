@@ -67,6 +67,11 @@ My notes
 We would write a new function to cater for that concern - we don't want any one
 function to be trying to do too much
 
+def stale_flags_github_issue():
+  stale_flags = find_the_oldies(flags)
+  ...
+  return 
+
   Data structure to use to process 100,000 flags efficiently:
 - This is already efficient for single-pass events, list is great here if we're
 talking in-memory

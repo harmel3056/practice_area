@@ -3,7 +3,7 @@ from datetime import datetime, date
 
 def stale_flag_detector(flags) -> list:
     stale_flags = []
-    current_date = datetime.today().date()
+    current_date = datetime.now().date()
 
     for flag in flags:
         if flag["permanent"] == True:
